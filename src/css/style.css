@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #000;
+}
+h1, h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+.game {
+  width: 100%;
+  margin-top: 30px;
+}
+.game-main {
+  width: 100%;
+}
+.game-field {
+  width: 450px;
+  height: 450px;
+  border: 1px solid #000;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #82C082;
+}
+.game-field_cell {
+  width: 25%;
+  height: 25%;
+  border: 1px solid #000;
+  list-style-type: none;
+  text-align: center;
+}
+.goblin {
+  background-image: url(../img/goblin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  cursor: url('../img/63439512.png'), auto;
+
+}
+/*
+------ Статистика --------
+*/
+.statistics {
+  width: 500px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 10px;
+  text-align: center;
+}
+.statistics h6 {
+  font-size: 14px;
+  font-weight: 300;
+}
+.statistics p {
+  font-size: 20px;
+  margin-top: 5px;
+}
+/*
+------ Игра окончена --------
+*/
+.game-over {
+  position: relative;
+  width: 100%;
+}
+.shutter {
+  width: 500px;
+  margin: 0 auto;
+  left: calc(50% - 250px);
+  text-align: center;
+  height: 460px;
+  background-color: #fff;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 10;
+  padding-top: 15%;
+  display: none;
+}
+.shutter h5 {
+  font-size: 30px;
+}
+
+.result-game {
+  margin-top: 15px;
+  font-size: 40px;
+}
+
+.victory {
+  color: green;
+}
+
+.defeat {
+  color: red;
+}
+
+.new-game {
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #ddd;
+}
+
+.new-game:hover {
+  background: #fff;
+}
+
+.active {
+  display: block;
+}
